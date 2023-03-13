@@ -25,18 +25,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 li.meme__item {
-    /* height: 50px; */
-    /* overflow: hidden; */
     border-top: 1px #d5cece solid;
     cursor: pointer;
     transition: all 1s;
 }
 li.meme__item:last-child {
     border-bottom: 1px #d5cece solid;
-}
-
-.meme__item-active{
-    height: 520px;
 }
 .meme__checked:checked .meme__plus img{
     transform: rotate(45deg);
@@ -69,8 +63,6 @@ li.meme__item:last-child {
     height: 450px;
     transition: all 1s;
 }
-
-
 .meme__title {
     padding: 20px;
     margin-bottom: 20px;
@@ -83,6 +75,11 @@ li.meme__item:last-child {
     text-align: left;
     color: rgb(74, 123, 124);
     cursor: pointer;
+    transition: .5s;
+}
+.meme__name:hover {
+    color: #000;
+    transition: .5s;
 }
 .meme__img {
     max-width: 360px;
